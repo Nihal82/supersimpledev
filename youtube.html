@@ -2,18 +2,63 @@
 <html>
 
 <head>
-  <title>Youtube.com - Clone</title>
+
+  <title>Youtube.com Clone</title>
   <style>
     .thumbnail {
       width: 300px;
+      display: block;
     }
+
+    .video-title {
+      width: 300px;
+    }
+
+    .search-block {
+      display: block;
+    }
+
+    .video-preview {
+      width: 300px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 15px;
+    }
+
   </style>
 </head>
 
 <body>
-  <img class="thumbnail" src="thumbnails/mkbhd-thumbnail.webp">
-  <input type="text" placeholder="Search">
-</body>
+  <input class="search-block" type="text" placeholder="Search">
 
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/mkbhd-thumbnail.webp">
+
+    <p class="video-title">
+      Talking tech and AI with google ceo sundar pichai!
+    </p>
+    <p class="video-author">Marques Brownlee</p>
+    <p class="video-stats">
+      3.4m views &#183; 6 months ago
+    </p>
+
+
+
+  </div>
+  <div class="video-preview">
+    <img class="thumbnail" src="thumbnails/markiplier.webp">
+
+    <p class="video-title">
+      Try not to laugh Challenge!
+    </p>
+    <p class="video-author">markiplier</p>
+    <p class="video-stats">
+      19m views &#183; 4 years ago
+    </p>
+
+
+
+  </div>
+</body>
 
 </html>
