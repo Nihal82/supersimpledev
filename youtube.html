@@ -1,227 +1,162 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style></style>
+  </head>
 
-<head>
-
-  <title>Youtube.com Clone</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <style>
-    .thumbnail {
-      width: 100%;
-    
-    }
-
-    p {
-      font-family: Roboto, Arial;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-
-    .channel-picture {
-      
-      vertical-align: top;
-     
-    }
-
-    .search-block {
-      display: block;
-    }
-
-    .video-title {
-      margin-top: 0px;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 20px;
-    }
-
-    .video-preview {
-      
-      
-
-    }
-
-    .video-info {
-      
-     
-    }
-
-    .profile-picture {
-      width: 40px;
-      border-radius: 50px;
-
-    }
-
-    .thumbnail-row {
-      margin-bottom: 12px;
-    }
-
-    .video-stats,
-    .video-author {
-      font-size: 12px;
-      color: rgb(96, 96, 96);
-    }
-
-    .video-stats {
-      margin-top: 3px;
-    }
-
-    .video-author {
-      margin-top: 10px;
-    }
-    .video-info-grid{
-      display : grid;
-      grid-template-columns: 50px 1fr;
-    }
-
-
-    .video-grid{
-      display:grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      column-gap: 15px;
-      row-gap: 40px;
-    }
-  </style>
-</head>
-
-<body>
-  <input class="search-block" type="text" placeholder="Search">
-  <div class="video-grid" >
-<!.mkbhd.>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-      <img class="thumbnail" src="thumbnails/mkbhd-thumbnail.webp">
-    </div>
-    <div>
-      <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="profile-picture" src="creator-dp/mkbhd-dp.jpeg">
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="/icons/hamburger-menu.svg" />
+        <img class="youtube-logo" src="/icons/youtube-logo.svg" />
       </div>
-      <div class="video-info">
-        <p class="video-title">
-          Talking tech and AI with google ceo sundar pichai!
-        </p>
-        <p class="video-author">Marques Brownlee</p>
-        <p class="video-stats">
-          3.4m views &#183; 6 months ago
-        </p>
+      <div class="middle-section">
+        <input class="search-block" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="/icons/search.svg" />
+        </button>
+        <button class="voice-button">
+          <img class="voice-icon" src="/icons/voice-search-icon.svg" />
+        </button>
+      </div>
+      <div class="right-section">
+        <img class="upload-icon" src="/icons/upload.svg" />
+        <img class="youtube-apps-icon" src="/icons/youtube-apps.svg" />
+        <img class="notification-icon" src="/icons/notifications.svg" />
+        <img
+          class="profile-picture"
+          src="/creator-dp/mkbhd-dp.jpeg"
+        />
       </div>
     </div>
-    </div>
-  </div>
-  <!markipklier>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-    <img class="thumbnail" src="thumbnails/markiplier.webp">
-  </div>
- 
-    <div class="video-info-grid">
-    <div class="channel-picture">
-      <img class="profile-picture" src="creator-dp/channel-2.jpeg" >
-    </div>
-    <div class="video-info">
-    <p class="video-title">
-      Try not to laugh Challenge!
-    </p>
-    <p class="video-author">markiplier</p>
-    <p class="video-stats">
-      19m views &#183; 4 years ago
-    </p>
-  </div>
-  </div>
-  </div>
-
-  <!.mkbhd.>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-      <img class="thumbnail" src="thumbnails/john-fish-thumbnail.webp">
-    </div>
-    <div>
-      <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="profile-picture" src="creator-dp/john-fish-dp.jpg">
+    <div class="video-grid">
+      <!.mkbhd.>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/mkbhd-thumbnail.webp" />
+        </div>
+        <div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="creator-dp/mkbhd-dp.jpeg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Talking tech and AI with google ceo sundar pichai!
+              </p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4m views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="video-info">
-        <p class="video-title">
-          Reading a Book a Week is Changing My Life
-        </p>
-        <p class="video-author">John Fish</p>
-        <p class="video-stats">
-          3.4m views &#183; 6 months ago
-        </p>
+      <!markipklier>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/markiplier.webp" />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="creator-dp/channel-2.jpeg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Try not to laugh Challenge!</p>
+            <p class="video-author">markiplier</p>
+            <p class="video-stats">19m views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <!.mkbhd.>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/john-fish-thumbnail.webp" />
+        </div>
+        <div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="creator-dp/john-fish-dp.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                Reading a Book a Week is Changing My Life
+              </p>
+              <p class="video-author">John Fish</p>
+              <p class="video-stats">3.4m views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!markipklier>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/freecodecamp-thumbnail.webp" />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img
+              class="profile-picture"
+              src="creator-dp/freecodecamo.org-dp.jpg"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Dynamic Programming - Learn to Solve Algorithmic Problems
+            </p>
+            <p class="video-author">FreeCodeCamp.org</p>
+            <p class="video-stats">9m views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!.mkbhd.>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/fireship-thumbnail.webp" />
+        </div>
+        <div>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img class="profile-picture" src="creator-dp/fireship-dp.jpg" />
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                15 futuristic databases you’ve never heard of
+              </p>
+              <p class="video-author">Fire Ship</p>
+              <p class="video-stats">1.4m views &#183; 8 months ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!markipklier>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/f1-thumbnail.webp" />
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="creator-dp/f1-dp.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Race Hilighit! Abu Dhabi</p>
+            <p class="video-author">F1</p>
+            <p class="video-stats">19m views &#183; 1 year ago</p>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-  </div>
-  <!markipklier>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-    <img class="thumbnail" src="thumbnails/freecodecamp-thumbnail.webp">
-  </div>
- 
-    <div class="video-info-grid">
-    <div class="channel-picture">
-      <img class="profile-picture" src="creator-dp/freecodecamo.org-dp.jpg" >
-    </div>
-    <div class="video-info">
-    <p class="video-title">
-      Dynamic Programming - Learn to Solve Algorithmic Problems 
-    </p>
-    <p class="video-author">FreeCodeCamp.org</p>
-    <p class="video-stats">
-      9m views &#183; 2 years ago
-    </p>
-  </div>
-  </div>
-  </div>
-  <!.mkbhd.>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-      <img class="thumbnail" src="thumbnails/fireship-thumbnail.webp">
-    </div>
-    <div>
-      <div class="video-info-grid">
-      <div class="channel-picture">
-        <img class="profile-picture" src="creator-dp/fireship-dp.jpg">
-      </div>
-      <div class="video-info">
-        <p class="video-title">
-          15 futuristic databases you’ve never heard of
-        </p>
-        <p class="video-author">Fire Ship</p>
-        <p class="video-stats">
-          1.4m views &#183; 8 months ago
-        </p>
-      </div>
-    </div>
-    </div>
-  </div>
-  <!markipklier>
-  <div class="video-preview">
-    <div class="thumbnail-row">
-    <img class="thumbnail" src="thumbnails/f1-thumbnail.webp">
-  </div>
- 
-    <div class="video-info-grid">
-    <div class="channel-picture">
-      <img class="profile-picture" src="creator-dp/f1-dp.jpg">
-    </div>
-    <div class="video-info">
-    <p class="video-title">
-      Race Hilighit! Abu Dhabi
-    </p>
-    <p class="video-author">F1</p>
-    <p class="video-stats">
-      19m views &#183; 1 year ago
-    </p>
-  </div>
-  </div>
- 
-
-
-  </div>
-</div>
-</body>
-
+  </body>
 </html>
